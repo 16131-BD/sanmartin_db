@@ -65,3 +65,8 @@ VALUES
 (4, 3);
 
 -- ALTER TABLE enrollment_details add constraint check_score check (score <= 20);
+
+-- Creacion de Usuarios
+CREATE USER secretary WITH PASSWORD '123456';
+GRANT SELECT ON TABLE students TO secretary;
+GRANT INSERT ON TABLE students TO secretary;
