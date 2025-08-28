@@ -69,7 +69,10 @@ create table enrollment_details(
 	id serial primary key,
 	enrollment_id int references enrollments(id),
 	course_assigned_id int references teachers_by_course(id),
+    score numeric,
 	status boolean default true,
 	created_at timestamp with time zone default current_date,
 	updated_at timestamp with time zone
 );
+
+-- ALTER TABLE enrollment_details add constraint check_score check (score <= 20);
