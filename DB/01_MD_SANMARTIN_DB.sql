@@ -74,5 +74,3 @@ create table enrollment_details(
 	created_at timestamp with time zone default current_date,
 	updated_at timestamp with time zone
 );
-
--- ALTER TABLE enrollment_details add constraint check_score check (score <= 20);

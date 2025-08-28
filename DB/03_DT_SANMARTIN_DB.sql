@@ -63,3 +63,5 @@ INSERT INTO enrollment_details (enrollment_id, course_assigned_id)
 VALUES 
 (4, 1),
 (4, 3);
+
+-- ALTER TABLE enrollment_details add constraint check_score check (score <= 20);
